@@ -1,0 +1,9 @@
+components:
+  - id: App
+    description: Main application container with centered content and animated logo
+    ui_elements:
+      - app_logo
+      - app_header
+      - app_link
+    source_file: src/App.css
+    source_path: /workspace/app/src/App.css

@@ -1,0 +1,35 @@
+ui_elements:
+  - id: favicon
+    description: Website favicon icon
+    source_file: public/index.html
+    source_path: /workspace/app/public/index.html
+  - id: apple_touch_icon
+    description: Apple touch icon for iOS devices
+    source_file: public/index.html
+    source_path: /workspace/app/public/index.html
+  - id: noscript_message
+    description: Message shown when JavaScript is disabled
+    label: You need to enable JavaScript to run this app.
+    source_file: public/index.html
+    source_path: /workspace/app/public/index.html
+  - id: root_container
+    description: Main application root container div
+    source_file: public/index.html
+    source_path: /workspace/app/public/index.html
+  - id: app_logo
+    description: Animated spinning logo with pointer events disabled
+    source_file: src/App.css
+    source_path: /workspace/app/src/App.css
+  - id: app_link
+    description: 'Branded link element with light blue color (#61dafb)'
+    source_file: src/App.css
+    source_path: /workspace/app/src/App.css
+  - id: animated_title
+    label: Todo App
+    description: Animated h1 header with spring animation and hover scaling effect
+    source_file: src/App.js
+    source_path: /workspace/app/src/App.js
+  - id: animated_container
+    description: Motion div container with spring animation from bottom
+    source_file: src/App.js
+    source_path: /workspace/app/src/App.js
