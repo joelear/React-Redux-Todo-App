@@ -1,9 +1,33 @@
 components:
   - id: App
-    description: Main application container with centered content and animated logo
+    description: Root application component with animated title and todo management
     ui_elements:
-      - app_logo
-      - app_header
-      - app_link
-    source_file: src/App.css
-    source_path: /workspace/app/src/App.css
+      - motion_heading
+      - motion_div
+    components:
+      - Todos
+      - DisplayTodos
+    source_file: src/App.js
+    source_path: /workspace/app/src/App.js
+  - id: DisplayTodos
+    description: Filterable todo list with animated buttons and items
+    ui_elements:
+      - active_button
+      - completed_button
+      - all_button
+    components:
+      - TodoItem
+    source_file: src/components/DisplayTodos.js
+    source_path: /workspace/app/src/components/DisplayTodos.js
+    features:
+      - name: Todo filtering
+        scenarios:
+          - given: User is viewing todo list
+            when: Clicks Active button
+            then: Only uncompleted todos are shown
+          - given: User is viewing todo list
+            when: Clicks Completed button
+            then: Only completed todos are shown
+          - given: User is viewing todo list
+            when: Clicks All button
+            then: All todos are shown regardless of status
