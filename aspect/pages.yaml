@@ -1,0 +1,28 @@
+pages:
+  - id: todo_app
+    title: Todo App
+    route: /
+    description: >
+      Main todo application page featuring an animated title and two main
+      sections: a todo input form and a list of existing todos with animations
+      powered by Framer Motion.
+    components:
+      - Todos
+      - DisplayTodos
+    source_file: src/App.js
+    source_path: /workspace/app/src/App.js
+  - id: display_todos
+    title: Todo List Display
+    route: /todos
+    description: >
+      A todo list page with filtering capabilities for active, completed, and
+      all todos. Features animated buttons and todo items with Redux state
+      management.
+    ui_elements:
+      - filter_button_active
+      - filter_button_completed
+      - filter_button_all
+    components:
+      - TodoItem
+    source_file: src/components/DisplayTodos.js
+    source_path: /workspace/app/src/components/DisplayTodos.js
