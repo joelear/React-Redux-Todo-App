@@ -16,14 +16,6 @@ ui_elements:
     description: Main application root container div
     source_file: public/index.html
     source_path: /workspace/app/public/index.html
-  - id: app_logo
-    description: Animated spinning logo with pointer events disabled
-    source_file: src/App.css
-    source_path: /workspace/app/src/App.css
-  - id: app_link
-    description: 'Branded link element with light blue color (#61dafb)'
-    source_file: src/App.css
-    source_path: /workspace/app/src/App.css
   - id: animated_title
     label: Todo App
     description: Animated h1 header with spring animation and hover scaling effect
@@ -33,3 +25,31 @@ ui_elements:
     description: Motion div container with spring animation from bottom
     source_file: src/App.js
     source_path: /workspace/app/src/App.js
+  - id: filter_button_active
+    label: Active
+    description: Animated button to filter active todos
+    animations:
+      - hover: scale 1.1
+      - tap: scale 0.9
+    source_file: src/components/DisplayTodos.js
+    source_path: /workspace/app/src/components/DisplayTodos.js
+  - id: filter_button_completed
+    label: Completed
+    description: Animated button to filter completed todos
+    animations:
+      - hover: scale 1.1
+      - tap: scale 0.9
+    source_file: src/components/DisplayTodos.js
+    source_path: /workspace/app/src/components/DisplayTodos.js
+  - id: filter_button_all
+    label: All
+    description: Animated button to show all todos
+    animations:
+      - hover: scale 1.1
+      - tap: scale 0.9
+    source_file: src/components/DisplayTodos.js
+    source_path: /workspace/app/src/components/DisplayTodos.js
+  - id: todo_list
+    description: Animated list container for todo items
+    source_file: src/components/DisplayTodos.js
+    source_path: /workspace/app/src/components/DisplayTodos.js
